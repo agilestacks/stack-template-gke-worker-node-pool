@@ -1,0 +1,19 @@
+---
+version: 1
+kind: stack
+meta:
+  name: gke-worker-node-pool:1
+  brief: Stack to provision pool of GKE worker nodes
+
+requires:
+  - gcp
+
+components:
+- name: gke-worker-nodes
+  source:
+    dir: components/gke-worker-nodes
+
+lifecycle:
+  verbs: [deploy, undeploy]
+  order:
+  - gke-worker-nodes

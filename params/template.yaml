@@ -1,0 +1,13 @@
+---
+parameters:
+  - name: cloud.region
+  - name: cloud.gcpProjectId
+  - name: cloud.availabilityZone
+  - name: dns.domain
+  - name: kubernetes.gke.cluster
+  - name: component.k8s-worker-nodes
+    parameters:
+    - name: size
+    - name: preemptible
+    - name: count
+    - name: maxCount

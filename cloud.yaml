@@ -1,0 +1,11 @@
+---
+parameters:
+- name: cloud.kind
+  value: gcp
+- name: terraform.bucket
+  kind: user
+  parameters:
+  - name: name
+    fromEnv: STATE_BUCKET
+  - name: region
+    fromEnv: STATE_REGION
