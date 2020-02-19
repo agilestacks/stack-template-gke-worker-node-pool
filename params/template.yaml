@@ -10,6 +10,6 @@ parameters:
     - name: size
     - name: count
     - name: maxCount
-  - name: component.k8s-worker-nodes
+  - name: component.worker-pool.gcp
     parameters:
-    - name: preemptible
+    - name: preemptible.enabled
