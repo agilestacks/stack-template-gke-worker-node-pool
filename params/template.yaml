@@ -10,6 +10,4 @@ parameters:
     - name: instance.size
     - name: count
     - name: maxCount
-  - name: component.worker-pool.gcp
-    parameters:
-    - name: preemptible.enabled
+    - name: gcp.preemptible.enabled
