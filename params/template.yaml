@@ -5,9 +5,9 @@ parameters:
   - name: cloud.availabilityZone
   - name: dns.domain
   - name: kubernetes.gke.cluster
-  - name: component.k8s-worker-nodes
+  - name: component.worker-pool
     parameters:
-    - name: size
-    - name: preemptible
+    - name: instance.size
     - name: count
     - name: maxCount
+    - name: gcp.preemptible.enabled
