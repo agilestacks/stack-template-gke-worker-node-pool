@@ -9,5 +9,4 @@ parameters:
     parameters:
     - name: instance.size
     - name: count
-    - name: maxCount
     - name: gcp.preemptible.enabled
