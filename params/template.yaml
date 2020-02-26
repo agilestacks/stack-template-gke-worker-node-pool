@@ -7,6 +7,7 @@ parameters:
   - name: kubernetes.gke.cluster
   - name: component.worker-pool
     parameters:
+    - name: shortName
     - name: instance.size
     - name: count
     - name: gcp.preemptible.enabled
